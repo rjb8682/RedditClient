@@ -5,9 +5,13 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditClient", "RedditClient\RedditClient.csproj", "{A2534E3E-1A11-4E6A-9379-B62A28751E3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditApi", "RedditApi\RedditApi.csproj", "{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RedditApi", "RedditApi\RedditApi.shproj", "{622C7258-5A94-4BFA-B056-BB302E65C9F1}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RedditApi\RedditApi.projitems*{622c7258-5a94-4bfa-b056-bb302e65c9f1}*SharedItemsImports = 13
+		RedditApi\RedditApi.projitems*{a2534e3e-1a11-4e6a-9379-b62a28751e3b}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -39,22 +43,6 @@ Global
 		{A2534E3E-1A11-4E6A-9379-B62A28751E3B}.Release|x86.ActiveCfg = Release|x86
 		{A2534E3E-1A11-4E6A-9379-B62A28751E3B}.Release|x86.Build.0 = Release|x86
 		{A2534E3E-1A11-4E6A-9379-B62A28751E3B}.Release|x86.Deploy.0 = Release|x86
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|ARM.ActiveCfg = Debug|ARM
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|ARM.Build.0 = Debug|ARM
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|x64.ActiveCfg = Debug|x64
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|x64.Build.0 = Debug|x64
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|x86.ActiveCfg = Debug|x86
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Debug|x86.Build.0 = Debug|x86
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|ARM.ActiveCfg = Release|ARM
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|ARM.Build.0 = Release|ARM
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|x64.ActiveCfg = Release|x64
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|x64.Build.0 = Release|x64
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|x86.ActiveCfg = Release|x86
-		{65E37CDA-B6AB-426D-BA2D-E5D5D00E2D35}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
