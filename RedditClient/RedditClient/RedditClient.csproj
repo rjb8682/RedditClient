@@ -127,6 +127,16 @@
     <Compile Include="RedditSharp\SubredditSettings.cs" />
     <Compile Include="RedditSharp\SubredditStyle.cs" />
     <Compile Include="RedditSharp\TextData.cs" />
+    <Compile Include="RedditSharp\Things\AuthenticatedUser.cs" />
+    <Compile Include="RedditSharp\Things\Comment.cs" />
+    <Compile Include="RedditSharp\Things\CreatedThing.cs" />
+    <Compile Include="RedditSharp\Things\Post.cs" />
+    <Compile Include="RedditSharp\Things\PrivateMessage.cs" />
+    <Compile Include="RedditSharp\Things\RedditUser.cs" />
+    <Compile Include="RedditSharp\Things\Subreddit.cs" />
+    <Compile Include="RedditSharp\Things\Thing.cs" />
+    <Compile Include="RedditSharp\Things\VotableThing.cs" />
+    <Compile Include="RedditSharp\Things\WikiPageRevision.cs" />
     <Compile Include="RedditSharp\UnixTimeStamp.cs" />
     <Compile Include="RedditSharp\UnixTimestampConverter.cs" />
     <Compile Include="RedditSharp\UrlParser.cs" />
@@ -150,7 +160,6 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="RedditSharp\RedditSharp2.csproj" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -162,9 +171,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RedditSharp\Things\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
