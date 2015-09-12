@@ -100,50 +100,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RedditSharp\AuthProvider.cs" />
-    <Compile Include="RedditSharp\Captcha.cs" />
-    <Compile Include="RedditSharp\CaptchaFailedException.cs" />
-    <Compile Include="RedditSharp\CaptchaResponse.cs" />
-    <Compile Include="RedditSharp\ConsoleCaptchaSolver.cs" />
-    <Compile Include="RedditSharp\Domain.cs" />
-    <Compile Include="RedditSharp\DuplicateLinkException.cs" />
-    <Compile Include="RedditSharp\Extensions.cs" />
-    <Compile Include="RedditSharp\FlairTemplate.cs" />
-    <Compile Include="RedditSharp\FlairType.cs" />
-    <Compile Include="RedditSharp\ICaptchaSolver.cs" />
-    <Compile Include="RedditSharp\IWebAgent.cs" />
-    <Compile Include="RedditSharp\LinkData.cs" />
-    <Compile Include="RedditSharp\Listing.cs" />
-    <Compile Include="RedditSharp\ModeratorPermission.cs" />
-    <Compile Include="RedditSharp\ModeratorUser.cs" />
-    <Compile Include="RedditSharp\MultipartFormBuilder.cs" />
-    <Compile Include="RedditSharp\RateLimitException.cs" />
-    <Compile Include="RedditSharp\Reddit.cs" />
-    <Compile Include="RedditSharp\RedditAPINameAttribute.cs" />
-    <Compile Include="RedditSharp\RedditException.cs" />
-    <Compile Include="RedditSharp\SpamFilterSettings.cs" />
-    <Compile Include="RedditSharp\SubmitData.cs" />
-    <Compile Include="RedditSharp\SubredditImage.cs" />
-    <Compile Include="RedditSharp\SubredditSettings.cs" />
-    <Compile Include="RedditSharp\SubredditStyle.cs" />
-    <Compile Include="RedditSharp\TextData.cs" />
-    <Compile Include="RedditSharp\Things\AuthenticatedUser.cs" />
-    <Compile Include="RedditSharp\Things\Comment.cs" />
-    <Compile Include="RedditSharp\Things\CreatedThing.cs" />
-    <Compile Include="RedditSharp\Things\Post.cs" />
-    <Compile Include="RedditSharp\Things\PrivateMessage.cs" />
-    <Compile Include="RedditSharp\Things\RedditUser.cs" />
-    <Compile Include="RedditSharp\Things\Subreddit.cs" />
-    <Compile Include="RedditSharp\Things\Thing.cs" />
-    <Compile Include="RedditSharp\Things\VotableThing.cs" />
-    <Compile Include="RedditSharp\Things\WikiPageRevision.cs" />
-    <Compile Include="RedditSharp\UnixTimeStamp.cs" />
-    <Compile Include="RedditSharp\UnixTimestampConverter.cs" />
-    <Compile Include="RedditSharp\UrlParser.cs" />
-    <Compile Include="RedditSharp\WebAgent.cs" />
-    <Compile Include="RedditSharp\Wiki.cs" />
-    <Compile Include="RedditSharp\WikiPage.cs" />
-    <Compile Include="RedditSharp\WikiPageSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
