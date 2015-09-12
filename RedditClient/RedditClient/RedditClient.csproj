@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{a2534e3e-1a11-4e6a-9379-b62a28751e3b}</ProjectGuid>
+    <ProjectGuid>{A2534E3E-1A11-4E6A-9379-B62A28751E3B}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RedditClient</RootNamespace>
@@ -17,9 +17,7 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    
     <PackageCertificateKeyFile>RedditClient_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -102,14 +100,46 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedditSharp\AuthProvider.cs" />
+    <Compile Include="RedditSharp\Captcha.cs" />
+    <Compile Include="RedditSharp\CaptchaFailedException.cs" />
+    <Compile Include="RedditSharp\CaptchaResponse.cs" />
+    <Compile Include="RedditSharp\ConsoleCaptchaSolver.cs" />
+    <Compile Include="RedditSharp\Domain.cs" />
+    <Compile Include="RedditSharp\DuplicateLinkException.cs" />
+    <Compile Include="RedditSharp\Extensions.cs" />
+    <Compile Include="RedditSharp\FlairTemplate.cs" />
+    <Compile Include="RedditSharp\FlairType.cs" />
+    <Compile Include="RedditSharp\ICaptchaSolver.cs" />
+    <Compile Include="RedditSharp\IWebAgent.cs" />
+    <Compile Include="RedditSharp\LinkData.cs" />
+    <Compile Include="RedditSharp\Listing.cs" />
+    <Compile Include="RedditSharp\ModeratorPermission.cs" />
+    <Compile Include="RedditSharp\ModeratorUser.cs" />
+    <Compile Include="RedditSharp\MultipartFormBuilder.cs" />
+    <Compile Include="RedditSharp\RateLimitException.cs" />
+    <Compile Include="RedditSharp\Reddit.cs" />
+    <Compile Include="RedditSharp\RedditAPINameAttribute.cs" />
+    <Compile Include="RedditSharp\RedditException.cs" />
+    <Compile Include="RedditSharp\SpamFilterSettings.cs" />
+    <Compile Include="RedditSharp\SubmitData.cs" />
+    <Compile Include="RedditSharp\SubredditImage.cs" />
+    <Compile Include="RedditSharp\SubredditSettings.cs" />
+    <Compile Include="RedditSharp\SubredditStyle.cs" />
+    <Compile Include="RedditSharp\TextData.cs" />
+    <Compile Include="RedditSharp\UnixTimeStamp.cs" />
+    <Compile Include="RedditSharp\UnixTimestampConverter.cs" />
+    <Compile Include="RedditSharp\UrlParser.cs" />
+    <Compile Include="RedditSharp\WebAgent.cs" />
+    <Compile Include="RedditSharp\Wiki.cs" />
+    <Compile Include="RedditSharp\WikiPage.cs" />
+    <Compile Include="RedditSharp\WikiPageSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    
     <None Include="RedditClient_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />
@@ -120,6 +150,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="RedditSharp\RedditSharp2.csproj" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -131,11 +162,12 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  
+  <ItemGroup>
+    <Folder Include="RedditSharp\Things\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
-
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
